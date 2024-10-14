@@ -17,6 +17,12 @@ body {
   /* color: var(--dark-color); */
 }
 
+section {
+  border-radius: 6px;
+  background-color: var(--white-color);
+  margin-top: 20px;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -35,6 +41,7 @@ body {
   padding: 12px 32px;
   justify-content: center;
   align-items: center;
+  color: var(--white-color);
   background-color: var(--button-background-color);
   border-radius: 16px;
   box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
@@ -123,15 +130,130 @@ body {
   gap: 16px;
 }
 
-.auth__link {
-}
+/* .auth__link {
+} */
 
 .auth__button {
-  color: var(--white-color);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .login {
   background-color: #0fa810;
+}
+
+/* Main */
+
+.main {
+  background-color: var(--blue-background);
+  padding-top: 20px;
+}
+
+.main-section {
+  max-width: 925px;
+}
+
+/* Mobile app */
+.mobile-app {
+  display: inline-flex;
+  padding: 25px 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-app__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 179px;
+  background-color: var(--link-button-color);
+  padding: 12px 12px;
+  border-radius: 16px;
+  color: var(--white-color);
+}
+
+.mobile-app__button-text {
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* .mobile-app__button-text::before {
+  content: url("../img/svg/android-app.svg") url("../img/svg/apple-app.svg");
+} */
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(20, 30, 85, 0.6) 0%,
+      rgba(20, 30, 85, 0.6) 100%
+    ),
+    url(<path-to-image>) lightgray 50% / cover no-repeat;
+  background-image: url("../img/hero.png");
+  height: 384px;
+  padding: 41px 0 0 20px;
+}
+
+.hero__rating {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  margin-bottom: 4px;
+}
+
+.hero__rating::after {
+  content: url("../img/svg/stars-group.svg");
+  display: inline-block;
+  height: 23px;
+  margin-left: 8px;
+}
+
+.hero__content {
+  color: var(--dark-color);
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.hero__title {
+  color: var(--white-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 10px 0 16px;
+  text-transform: uppercase;
+
+  width: 538px;
+}
+
+.hero__button {
+  display: flex;
+  width: 214px;
+  height: 48px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  line-height: 20.48px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.hero__warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 214px;
+  color: var(--white-color);
+  font-size: 6px;
+  line-height: 9px;
 }
