@@ -1,7 +1,137 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+:root {
+  --grey-color: #7c7c7c;
+  --white-color: #fff;
+  --light-blue-background: #dfe8f6;
+  --blue-background: #141e55;
+  --dark-color: #192a32;
+  --link-button-color: #1a3769;
+  --button-background-color: #ec622b;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
+  /* color: var(--dark-color); */
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  background-color: var(--blue-background);
+  color: var(--white-color);
+  /* line-height: 1.28; */
+}
+
+.button {
+  display: inline-flex;
+  height: 48px;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--button-background-color);
+  border-radius: 16px;
+  box-shadow: 0px 4px 18px 0px rgba(14, 24, 17, 0.25);
+}
+
+/* Header */
+
+.header {
+  background-color: var(--dark-color);
+  padding: 12px 0 13px;
+}
+
+.header__logo {
+  padding: 14.5px 32px;
+  font-size: 20px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 21px;
+}
+
+.nav__item {
+  background-color: var(--link-button-color);
+  padding: 12px 24px;
+  border-radius: 16px;
+}
+
+.nav__item:first-child .nav__link::before {
+  content: url("../img/svg/Gift.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.nav__item:nth-child(2) .nav__link::before {
+  content: url("../img/svg/iPhone.svg");
+  height: 24px;
+  width: 24px;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header__language {
+  display: inline-flex;
+  color: var(--white-color);
+  height: 48px;
+  /* padding: 12px 24px; */
+  align-items: center;
+  gap: 10px;
+  background-color: var(--link-button-color);
+  border-radius: 16px;
+}
+
+.language__select {
+  width: 100%;
+  padding: 12px 24px;
+}
+
+.language__select * {
+  background-color: var(--link-button-color);
+}
+
+.auth__list {
+  display: flex;
+  gap: 16px;
+}
+
+.auth__link {
+}
+
+.auth__button {
+  color: var(--white-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.login {
+  background-color: #0fa810;
 }
