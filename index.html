@@ -12,47 +12,57 @@
       <div class="container">
         <div class="header__nav">
           <a href="/" class="header__logo logo">LOGO</a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="#" class="nav__link">Bonuses</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">APP</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">LIVE</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">SPORTS</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">MORE</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="auth">
-            <div class="header__language">
-              <select name="language" id="language" class="language__select">
-                <option value="AT">
-                  <img src="./img/svg/AT-flag.svg" alt="AT" /> AT
-                </option>
-                <option value="RU">
-                  <img src="./img/svg/RU-flag.svg" alt="RU" /> RU
-                </option>
-                <option value="EN">EN</option>
-              </select>
+          <div id="nav" class="nav__wrapper">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Bonuses</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">APP</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">LIVE</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">SPORTS</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">MORE</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="auth">
+              <div class="header__language">
+                <select name="language" id="language" class="language__select">
+                  <option value="AT">
+                    <img src="./img/svg/AT-flag.svg" alt="AT" /> AT
+                  </option>
+                  <option value="RU">
+                    <img src="./img/svg/RU-flag.svg" alt="RU" /> RU
+                  </option>
+                  <option value="EN">EN</option>
+                </select>
+              </div>
+              <ul class="auth__list">
+                <li class="auth__item">
+                  <button class="auth__button button">Sign up</button>
+                </li>
+                <li class="auth__item">
+                  <button class="auth__button button login">log in</button>
+                </li>
+              </ul>
             </div>
-            <ul class="auth__list">
-              <li class="auth__item">
-                <button class="auth__button button">Sign up</button>
-              </li>
-              <li class="auth__item">
-                <button class="auth__button button login">log in</button>
-              </li>
-            </ul>
           </div>
         </div>
+
+        <button id="nav-button" class="nav-button">
+          <img
+            id="nav-button-img"
+            src="./img/svg/burger-nav.svg"
+            alt="nav button"
+          />
+        </button>
       </div>
     </header>
 
@@ -77,7 +87,7 @@
           <section class="hero main-section">
             <div class="hero__rating">96/100</div>
             <p class="hero__content">Overall Rating Among Players</p>
-            <h1 class="hero__title">
+            <h1 class="hero__title secondary-title">
               Lorem ipsum dolor sit amet, consectetur adipiscing
             </h1>
             <button class="hero__button button">Sign up</button>
@@ -183,7 +193,9 @@
           <!-- Bonus -->
           <section class="bonus main-section">
             <div class="bonus__content">
-              <h2 class="bonus__title">100% BONUS UP TO 300€</h2>
+              <h2 class="bonus__title secondary-title">
+                100% BONUS UP TO 300€
+              </h2>
               <p class="bonus__text">+100 free spins on your first deposit</p>
               <button class="bonus__button button">Get a bonus now</button>
             </div>
@@ -191,7 +203,7 @@
 
           <!-- Garanty -->
           <section class="garanty main-section">
-            <h2 class="garanty__title">100% up to 300€</h2>
+            <h2 class="garanty__title main-title">100% up to 300€</h2>
             <p class="garanty__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
               egestas eget purus, in dapibus imperdiet quis eget. Curabitur
@@ -211,31 +223,67 @@
                 <div class="experience__item-rating">
                   <ul class="experience__item-stars">
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        class="experience__item-icon"
+                        alt="star-active"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                   </ul>
                   <span class="experience__item-rating-text">9/10</span>
@@ -246,31 +294,67 @@
                 <div class="experience__item-rating">
                   <ul class="experience__item-stars">
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                   </ul>
                   <span class="experience__item-rating-text">8/10</span>
@@ -281,31 +365,67 @@
                 <div class="experience__item-rating">
                   <ul class="experience__item-stars">
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                   </ul>
                   <span class="experience__item-rating-text">7/10</span>
@@ -316,31 +436,67 @@
                 <div class="experience__item-rating">
                   <ul class="experience__item-stars">
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star-active.svg" alt="star-active" />
+                      <img
+                        src="./img/svg/star-active.svg"
+                        alt="star-active"
+                        class="experience__item-icon"
+                      />
                     </li>
                     <li class="experience__item-star">
-                      <img src="./img/svg/star.svg" alt="star" />
+                      <img
+                        src="./img/svg/star.svg"
+                        alt="star"
+                        class="experience__item-icon"
+                      />
                     </li>
                   </ul>
                   <span class="experience__item-rating-text">9/10</span>
@@ -352,7 +508,7 @@
           <!-- Facts -->
 
           <section class="facts main-section">
-            <h2 class="facts__title">quick facts</h2>
+            <h2 class="facts__title secondary-title">quick facts</h2>
 
             <ul class="facts__list">
               <li class="facts__item">
@@ -436,7 +592,7 @@
           <!-- Sportsbook review -->
 
           <section class="sportsbook main-section">
-            <h2 class="sportsbook__title">sportsbook review</h2>
+            <h2 class="sportsbook__title main-title">sportsbook review</h2>
             <p class="sportsbook__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
               egestas eget purus, in dapibus imperdiet quis eget. Curabitur
@@ -448,7 +604,9 @@
             </p>
             <ul class="sportsbook__list">
               <li class="sportsbook__item">
-                <h3 class="sportsbook__item-title">LINEUP OF THE SPORTS</h3>
+                <h3 class="sportsbook__item-title secondary-title">
+                  LINEUP OF THE SPORTS
+                </h3>
                 <p class="sportsbook__item-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Consequat egestas eget purus, in dapibus imperdiet quis eget.
@@ -460,7 +618,9 @@
                 </p>
               </li>
               <li class="sportsbook__item">
-                <h3 class="sportsbook__item-title">BETTING TYPES</h3>
+                <h3 class="sportsbook__item-title secondary-title">
+                  BETTING TYPES
+                </h3>
                 <p class="sportsbook__item-text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Consequat egestas eget purus, in dapibus imperdiet quis eget.
@@ -472,7 +632,9 @@
                 </p>
               </li>
               <li class="sportsbook__item">
-                <h3 class="sportsbook__item-title">LIVE BETTING</h3>
+                <h3 class="sportsbook__item-title secondary-title">
+                  LIVE BETTING
+                </h3>
                 <ul class="sportsbook__item-list">
                   <li class="item-list__item">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -518,7 +680,9 @@
           <!-- Reviews -->
 
           <section class="reviews main-section">
-            <h2 class="reviews__title">what other players have to say</h2>
+            <h2 class="reviews__title secondary-title">
+              what other players have to say
+            </h2>
             <ul class="reviews__list">
               <li class="reviews__item">
                 <img
@@ -561,7 +725,7 @@
           <!-- Support -->
 
           <section class="support main-section">
-            <h2 class="support__title">Customer Support</h2>
+            <h2 class="support__title main-title">Customer Support</h2>
             <p class="support__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat
               egestas eget purus, in dapibus imperdiet quis eget. Curabitur
@@ -680,7 +844,7 @@
           <!-- FAQ -->
 
           <section class="faq main-section">
-            <h2 class="faq__title">Faq</h2>
+            <h2 class="faq__title main-title">Faq</h2>
 
             <ul class="faq__list">
               <li class="faq__item">

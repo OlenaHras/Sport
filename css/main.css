@@ -14,7 +14,7 @@
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  /* color: var(--dark-color); */
+  transition: all 0.5s ease-in-out;
 }
 
 section {
@@ -51,11 +51,29 @@ section {
   text-transform: uppercase;
 }
 
+.main-title {
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.secondary-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
 /* Header */
 
 .header {
   background-color: var(--dark-color);
   padding: 12px 0 13px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 
 .header__logo {
@@ -68,6 +86,11 @@ section {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.nav__wrapper {
+  display: flex;
+  gap: 50px;
 }
 
 .nav__list {
@@ -147,12 +170,18 @@ section {
   background-color: #0fa810;
 }
 
+/* Burger menu */
+.nav-button {
+  display: none;
+}
+
 /* Main */
 
 .main {
   background-color: var(--blue-background);
   /* padding-top: 20px; */
   display: flex;
+  margin-top: 84px;
 }
 
 .main-section {
@@ -231,13 +260,9 @@ section {
 
 .hero__title {
   color: var(--white-color);
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
   margin: 10px 0 16px;
-  text-transform: uppercase;
 
-  width: 538px;
+  max-width: 538px;
 }
 
 .hero__button {
@@ -324,10 +349,6 @@ section {
 }
 
 .bonus__title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
@@ -349,10 +370,6 @@ section {
 }
 
 .garanty__title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
@@ -434,11 +451,6 @@ section {
 
 .facts__title {
   width: 269px;
-  font-size: 40px;
-
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
   margin-left: 20px;
   margin-bottom: 18px;
   padding-bottom: 6px;
@@ -479,10 +491,6 @@ section {
 }
 
 .sportsbook__title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-transform: uppercase;
   margin-bottom: 62px;
 }
 
@@ -506,10 +514,6 @@ section {
 }
 
 .sportsbook__item-title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
   margin-bottom: 24px;
 }
 
@@ -537,11 +541,6 @@ section {
 }
 
 .reviews__title {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  text-transform: uppercase;
-
   margin-bottom: 14px;
 }
 
@@ -553,7 +552,7 @@ section {
 .reviews__item {
   display: flex;
   gap: 31px;
-  width: 433px;
+  max-width: 433px;
   height: 177px;
   border-radius: 6px;
   padding: 32px 20px 32px 32px;
@@ -608,10 +607,6 @@ section {
 }
 
 .support__title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-transform: uppercase;
   margin-bottom: 24px;
 }
 
@@ -680,10 +675,6 @@ section {
 }
 
 .faq__title {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-transform: uppercase;
   margin-bottom: 32px;
 }
 
@@ -705,11 +696,19 @@ section {
   border: 1px solid rgba(119, 119, 119, 0.5);
 }
 
+.faq__button.open .arrow {
+  transform: rotate(180deg);
+}
+
 .faq__answer {
+  display: none;
   background-color: var(--light-blue-background);
   padding: 16px 12px;
   border-radius: 0px 0px 6px 6px;
   opacity: 0.9;
+}
+.faq__answer.open {
+  display: block;
 }
 
 /* Footer */
