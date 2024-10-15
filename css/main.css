@@ -27,6 +27,8 @@ section {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  gap: 18px;
 }
 
 .logo {
@@ -65,6 +67,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav__list {
@@ -148,7 +151,8 @@ section {
 
 .main {
   background-color: var(--blue-background);
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  display: flex;
 }
 
 .main-section {
@@ -436,6 +440,7 @@ section {
   line-height: 48px;
   text-transform: uppercase;
   margin-left: 20px;
+  margin-bottom: 18px;
   padding-bottom: 6px;
   border-bottom: 2px solid #c5c5c5;
 }
@@ -448,6 +453,7 @@ section {
 
 .facts__item {
   display: flex;
+  max-width: 850px;
   align-items: center;
   gap: 28px;
   padding: 8px 16px;
@@ -463,4 +469,366 @@ section {
   align-items: center;
   gap: 8px;
   width: 199px;
+  min-width: 199px;
+}
+
+/* Sportsbook review */
+
+.sportsbook {
+  padding: 32px 20px;
+}
+
+.sportsbook__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-transform: uppercase;
+  margin-bottom: 62px;
+}
+
+.sportsbook__text {
+  padding-bottom: 40px;
+}
+
+.sportsbook__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.sportsbook__item {
+  padding: 20px 0;
+}
+
+.sportsbook__item:last-child {
+  padding-bottom: 0;
+}
+
+.sportsbook__item-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.sportsbook__item-text {
+}
+
+.sportsbook__item-list {
+  padding: 20px 20px 0 20px;
+}
+
+.item-list__item {
+  list-style-type: "- ";
+  margin-bottom: 24px;
+}
+
+.item-list__item--numbered {
+  list-style-type: decimal;
+}
+
+/* Reviews */
+
+.reviews {
+  padding: 20px;
+  margin-top: 92px;
+}
+
+.reviews__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  margin-bottom: 14px;
+}
+
+.reviews__list {
+  display: flex;
+  gap: 19px;
+}
+
+.reviews__item {
+  display: flex;
+  gap: 31px;
+  width: 433px;
+  height: 177px;
+  border-radius: 6px;
+  padding: 32px 20px 32px 32px;
+  background-color: #e2eaf7;
+}
+
+.reviews__item-img {
+  border-radius: 8px;
+  width: 109px;
+  height: 113px;
+}
+
+.reviews__item-wrapper {
+}
+
+.reviews__item-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.reviews__item-name {
+  font-weight: 600;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}
+
+.reviews__item-rating {
+  font-size: 12px;
+}
+
+.reviews__item-rating::before {
+  content: url("../img/svg/star-rating.svg");
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.reviews__item-text {
+}
+
+/* Support */
+
+.support {
+  padding: 20px;
+  background-image: url("../img/support.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.support__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.support__text {
+  margin-bottom: 24px;
+}
+
+.support__list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 35px;
+}
+
+.support__item {
+}
+
+.support__button {
+  background-color: var(--white-color);
+  color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  box-shadow: none;
+  padding: 10px 24px;
+}
+
+.support__button-icon {
+  margin-right: 10px;
+}
+
+.support__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.support__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 26px;
+  border-bottom: 1px solid var(--dark-color);
+  padding: 10px 0;
+}
+
+.support__info-title {
+  width: 212px;
+  min-width: 212px;
+}
+
+.support__info-link {
+  color: #2e9344;
+}
+.support__info-link:hover {
+  text-decoration: underline;
+}
+
+.support__info-text {
+}
+
+.support__google-link {
+  font-weight: 600;
+}
+
+/* FAQ */
+
+.faq {
+  padding: 20px;
+}
+
+.faq__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: 600;
+  border: 1px solid rgba(119, 119, 119, 0.5);
+}
+
+.faq__answer {
+  background-color: var(--light-blue-background);
+  padding: 16px 12px;
+  border-radius: 0px 0px 6px 6px;
+  opacity: 0.9;
+}
+
+/* Footer */
+
+.footer {
+  padding: 36px 20px;
+}
+
+.footer__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 42px;
+}
+
+.footer__responsibility {
+  margin-bottom: 26px;
+}
+
+.footer__logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  padding: 6px 30px 8px 31px;
+  font-size: 32px;
+}
+
+.footer__logo-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 253px;
+  height: 54px;
+  padding: 6px 81px 7px 82px;
+  font-size: 32px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 295px;
+  margin-top: 20px;
+}
+
+.sidebar__content {
+}
+
+.sidebar__events-section {
+  margin-bottom: 20px;
+}
+
+.sidebar__live-wrapper {
+  height: 88px;
+  padding: 20px 22px;
+
+  border-radius: 6px 6px 0px 0px;
+  background: var(--dark-color);
+}
+
+.sidebar__live-link {
+  display: flex;
+  width: 251px;
+  padding: 4px 16px 4px 4px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 60px;
+}
+
+.sidebar__live-text {
+}
+
+.sidebar__events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 24px 0px;
+  border-radius: 0px 0px 6px 6px;
+  background-color: var(--white-color);
+}
+
+.sidebar__events-item {
+  display: flex;
+  width: 275px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebar__events-link {
+  color: var(--grey-color);
+}
+
+.sidebar__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 20px 0px 21px 0px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+.sidebar__games-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--white-color);
 }
