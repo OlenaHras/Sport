@@ -1,4 +1,24 @@
+@media (max-width: 320px) {
+  .main-section {
+    max-width: 268px;
+  }
+
+  .support__info-item {
+    flex-direction: column;
+  }
+
+  .facts__title {
+    width: 229px;
+    margin-left: 20px;
+    margin-bottom: 18px;
+    padding-bottom: 6px;
+  }
+}
+
 @media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
   .main-title {
     font-size: 36px;
     /* line-height: 27.6px; */
@@ -18,7 +38,7 @@
     top: 0;
     bottom: 0;
     left: 0;
-    right: -1000;
+    right: 0;
     background-color: var(--white-color);
     z-index: 1;
     padding: 20px;
@@ -35,7 +55,8 @@
   .nav__wrapper.open {
     display: flex;
     flex-direction: column;
-    right: 0;
+
+    transition: right 0.5s ease;
     /* position: fixed; */
   }
 
@@ -65,8 +86,13 @@
     width: 100%;
   }
 
+  .hero {
+    height: auto;
+    padding: 21px 0 0 10px;
+  }
   .main-section {
     max-width: 768px;
+    width: 100%;
   }
 
   .main-nav {
@@ -88,6 +114,21 @@
   .mobile-app {
     flex-direction: column;
     gap: 12px;
+    padding: 12px 10px;
+  }
+
+  /* Bonus */
+
+  .bonus {
+    background-image: url(../img/bonus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 354px;
+    padding: 25px 0 0 10px;
+  }
+
+  .bonus__content {
+    max-width: 272px;
   }
 
   /* Experience */
