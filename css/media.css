@@ -13,22 +13,29 @@
     margin-bottom: 18px;
     padding-bottom: 6px;
   }
+
+  #scroll-btn {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   body {
     font-size: 12px;
   }
+
+  #scroll-btn {
+    display: none;
+  }
   .main-title {
     font-size: 36px;
-    /* line-height: 27.6px; */
+
     font-weight: 700;
   }
 
   .secondary-title {
     font-size: 28px;
     font-weight: 700;
-    /* line-height: 18px; */
   }
 
   /* Header */

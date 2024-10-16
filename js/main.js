@@ -157,3 +157,19 @@ loginForm.addEventListener("submit", (e) => {
 
   closeModal("login");
 });
+
+// Scroll up button
+
+const scrollUpBtn = document.querySelector("#scroll-btn");
+
+scrollUpBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const userScrollDown = () => {
+  if (window.scrollY > 5000) {
+    scrollUpBtn.style.display = "block";
+  } else {
+    scrollUpBtn.style.display = "none";
+  }
+};
