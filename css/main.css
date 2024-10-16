@@ -24,19 +24,16 @@ section {
 }
 
 .container {
-  /* position: relative; */
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   gap: 18px;
-  /* overflow: hidden; */
 }
 
 .logo {
   background-color: var(--blue-background);
   color: var(--white-color);
-  /* line-height: 1.28; */
 }
 
 .button {
@@ -151,7 +148,6 @@ section {
   display: inline-flex;
   color: var(--white-color);
   height: 48px;
-  /* padding: 12px 24px; */
   align-items: center;
   gap: 10px;
   background-color: var(--link-button-color);
@@ -186,10 +182,8 @@ section {
 .main {
   position: relative;
   background-color: var(--blue-background);
-  /* padding-top: 20px; */
   display: flex;
   margin-top: 84px;
-  /* z-index: 1; */
   overflow: hidden;
 }
 
@@ -220,14 +214,8 @@ section {
 }
 
 .mobile-app__button-text {
-  /* font-weight: 600;
-  text-transform: uppercase; */
   white-space: nowrap;
 }
-
-/* .mobile-app__button-text::before {
-  content: url("../img/svg/android-app.svg") url("../img/svg/apple-app.svg");
-} */
 
 /* Hero */
 
@@ -283,10 +271,7 @@ section {
   padding: 12px 32px;
   justify-content: center;
   align-items: center;
-
-  /* font-weight: 600; */
   line-height: 20.48px;
-  /* text-transform: uppercase; */
   margin-bottom: 10px;
 }
 
@@ -326,7 +311,6 @@ section {
 .main-nav__item:hover {
   background: #fff;
   box-shadow: 0px 1px 12px 0px rgba(10, 98, 106, 0.15);
-  /* border-top: 4px solid #0fa810; */
 }
 
 .main-nav__item:hover .main-nav__line {
@@ -398,9 +382,6 @@ section {
   margin-bottom: 16px;
 }
 
-/* .garanty__text {
-} */
-
 /* Experience */
 
 .experience {
@@ -459,17 +440,6 @@ section {
 
 /* Facts */
 
-/* .facts__table {
-  width: 100%;
-}
-
-.facts__table-row {
-  border-bottom: 1px solid rgba(119, 119, 119, 0.5);
-  /* display: flex; */
-/* align-items: center; */
-/* padding: 8px 16px; */
-/* } */
-
 .facts {
   padding: 32px 20px 24px;
 }
@@ -496,10 +466,6 @@ section {
   padding: 8px 16px;
   border-bottom: 1px solid rgba(119, 119, 119, 0.5);
 }
-
-/* .facts__item-text {
-  white-space: nowrap;
-} */
 
 .facts__item-wrapper {
   display: flex;
@@ -540,9 +506,6 @@ section {
 
 .sportsbook__item-title {
   margin-bottom: 24px;
-}
-
-.sportsbook__item-text {
 }
 
 .sportsbook__item-list {
@@ -590,9 +553,6 @@ section {
   height: 113px;
 }
 
-.reviews__item-wrapper {
-}
-
 .reviews__item-info {
   display: flex;
   align-items: center;
@@ -618,9 +578,6 @@ section {
   margin-right: 6px;
 }
 
-.reviews__item-text {
-}
-
 /* Support */
 
 .support {
@@ -643,9 +600,6 @@ section {
   display: flex;
   gap: 16px;
   margin-bottom: 35px;
-}
-
-.support__item {
 }
 
 .support__button {
@@ -684,9 +638,6 @@ section {
 }
 .support__info-link:hover {
   text-decoration: underline;
-}
-
-.support__info-text {
 }
 
 .support__google-link {
@@ -787,9 +738,6 @@ section {
   z-index: 5;
 }
 
-.sidebar__content {
-}
-
 .sidebar__events-section {
   margin-bottom: 20px;
 }
@@ -811,9 +759,6 @@ section {
   border-radius: 60px;
 }
 
-.sidebar__live-text {
-}
-
 .sidebar__events-list {
   display: flex;
   flex-direction: column;
@@ -825,7 +770,6 @@ section {
 
 .sidebar__events-item {
   display: flex;
-  /* width: 275px; */
   padding: 8px 12px;
   align-items: center;
   gap: 12px;
@@ -883,7 +827,6 @@ section {
     rgba(0, 104, 154, 0.39) 68.02%,
     rgba(0, 83, 123, 0) 100%
   );
-  /* filter: blur(20px); */
   border-radius: 50%;
   z-index: 2;
 }
@@ -912,7 +855,6 @@ section {
   transform: translate(-50%, -50%);
   width: 450px;
   border-radius: 16px;
-  /* height: 450px; */
   background-color: var(--white-color);
   z-index: 20;
 }
@@ -931,7 +873,6 @@ section {
   position: absolute;
   right: 20px;
   top: 20px;
-  /* transform: translate(10px, -20px); */
   display: inline-block;
   text-align: center;
   padding: 7px 7px;
